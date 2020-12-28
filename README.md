@@ -30,7 +30,7 @@ testPlan {
 ```
 ---
 
-## Test Plan With One Thread Group and Two Test Cases
+## Test plan with one thread group and two test cases
 
 ---
 
@@ -76,7 +76,7 @@ simutaneously, based on the parameters defined in the thread group.
 
 ---
 
-## Test Plan With More Than One Thread Groups
+## Test plan with more than one thread groups
 
 ---
 
@@ -192,14 +192,13 @@ bellow.
 
 ```
 post("/employees", jsonBody, "application/json")
-                        get("/employees")
-                        delete("/employees/1")
+get("/employees")
+delete("/employees/1")
                         
-                        post("/employees", jsonBody, "application/json").message
-                        get("/employees").code
-                        delete("/employees/1").body.string()
-                        
-                        
+post("/employees", jsonBody, "application/json").message
+get("/employees").code
+delete("/employees/1").body.string()
+                                             
 
 ```
 ---
