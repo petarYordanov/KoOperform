@@ -12,7 +12,7 @@ familiar with Kotlin and still be able to use it to it's full potential. The bas
 
 Basic structure of the DSL contains testPlan, threadGroup, testCase and testStep.
 
-`
+```
 testPlan {
         threadGroup {
             initiateLoad {
@@ -27,7 +27,7 @@ testPlan {
             }
         }
     }
-`
+```
 ---
 
 ## Test Plan With One Thread Group and Two Test Cases
@@ -37,7 +37,7 @@ testPlan {
 In the case bellow, we see a Test Plan, that contains one thread group with two test cases under it, which means that the both test cases will be executed
 simutaneously, based on the parameters defined in the thread group.
 
-`
+```
  testPlan {
         planName = " Single Thread"
         threadGroup {
@@ -72,7 +72,7 @@ simutaneously, based on the parameters defined in the thread group.
         }
     }
 
-`
+```
 
 ---
 
@@ -83,7 +83,7 @@ simutaneously, based on the parameters defined in the thread group.
 In the case bellow, there two thread groups containing two test cases each. The test cases in the secound thread group are executed after those in the first
 are done.
 
-`
+```
     testPlan {
         planName = "Main Plan"
         threadGroup {
@@ -140,5 +140,5 @@ are done.
             }
         }
     }
-`
+```
 
